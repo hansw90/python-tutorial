@@ -10,7 +10,6 @@ import pandas as pd
 
 """
 
-# pandas 사용하기
 import numpy as np # numpy 도 함께 import
 import pandas as pd
 
@@ -89,4 +88,69 @@ NaN값은 추후에 어떠한 방법으로도 처리가 되지 않는 데이터�
 # describe() 함수는 DataFrame의 계산 가능한 값들에 대한 다양한 계산 값을 보여준다.
 df2.describe()
 
+## DataFrame Indexing
+data = {"names": ["Kilho", "Kilho", "Kilho", "Charles", "Charles"],
+           "year": [2014, 2015, 2016, 2015, 2016],
+           "points": [1.5, 1.7, 3.6, 2.4, 2.9]}
+df = pd.DataFrame(data, columns=["year", "names", "points", "penalty"],
+                          index=["one", "two", "three", "four", "five"])
+df
 
+
+#3-1. DataFrame 에서 열을 선택하고 조작하기
+df['year']
+
+#위와 동일
+df.year 
+
+df['year','points']
+
+#특정 열에 대해 위와 같이 선택하고, 우리가 원한느 값을 대입할 수 있다.
+df['penalty'] = 0.5
+df
+#penalty 속성의 값이 다 0.5
+
+# 또는
+df['penalty'] = [0.1, 0.2, 0.3, 0.4, 0.5] # python의 List나 numpy의 array
+
+
+#새로운 열을 추가하기
+df['zeros'] = np.arange(5)
+
+#Series를 추가할 수도 있다.
+val = pd.Series([-1.2,-1.5,-1.7], index=['two','four','five'])
+df['debt'] =val
+df
+
+df['net_points'] = df['points'] - df['penalty']
+df['high_points'] = df['net_points'] > 2.0
+df
+
+
+# 열 삭제하기
+del df['high_points']
+del df['net_points']
+del df['zeros']
+
+df
+
+
+# DataFrame 에서 행을 선택하고 조작하기
+
+#0번째 부터 2번까지 가져온다
+#뒤에 써준 숫자번쨰의 행은 뺀다.
+df[0:3]
+
+
+#.loc 또는 iloc 함수를 사용하는 방법
+df.loc['two']
+
+df.loc['two':'four']
+
+df.loc['two':'four','points']
+
+df.loc[:,'year'] # == df['year']
+
+
+
+##4부터 다시보기
