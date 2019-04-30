@@ -8,3 +8,9 @@
 -  선형대수,난수 발생기, 푸리에 변환 기능
 
 import numpy as np
+
+-  스칼라/벡터/행렬
+   - 스칼라는 number
+   - 벡터는 숫자들의 리스트(row || columns)
+   - 행렬은 숫자들의 array(row && columns)
+   
