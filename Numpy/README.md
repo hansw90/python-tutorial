@@ -14,3 +14,28 @@ import numpy as np
    - 벡터는 숫자들의 리스트(row || columns)
    - 행렬은 숫자들의 array(row && columns)
    
+   
+-  numpy 배열 (1/2)
+   - numpy 배열을 만들 때는 np.array() 메소드 이용
+   - np.array()는 파이썬의 리스트를 numpy,ndarray 형태로 변환
+   - numpy는 다차원 행렬로 표현하고 , 계산하기 쉬움
+   arr = [[1,2,3,4],[5,6,7,8]]
+   arr2 = np.array(arr)
+   arr2.ndim
+   Out[] : 2
+   arr2.shape
+   Out[] : (2,4)
+   arr2 * 10
+   Out[] : array([10,20,30,40],[50,60,70,80])
+   arr2 + 10
+   Out[] : array([11,12,13,14],[15,16,17,18])
+   
+   - np.zeros(5) : 0으로 초기화된 배열
+   Out[] : array([0.,0.,0.,0.,0.])
+   - np.ones(5) : 1로 초기화된 배열
+   Out[] : array([1.,1.,1.,1.,1.])
+   - np.linespace(0, 10, 5) : 선형 구간에서 지정 구간의 수만큼 분할
+   Out[] : array([0,2.5,5,7.5,10])
+   - np.logspace(0, 100, 5) : 로그 구간에서 지정 구간의 수만큼 분할
+   Out[] : array([1.e+000, 1.e+025, 1.e+050, 1.e+075, 1.e+100, ])
+   - np.empty(5) : 배열을 메모리에 생성만하고 특정한 값을 초기화하지 않는 배열 (초기화 시간 단축)
