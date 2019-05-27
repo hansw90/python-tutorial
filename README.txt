@@ -1,6 +1,6 @@
 ## Jupyter Notebook
   
-
+ 
 # 단축키 (Shortcut) : Edit Mode 단축키
 
 Tab : 코드 자돈완성 들여쓰기
@@ -22,7 +22,7 @@ Shift-Enter : run cell
 Ctrl-Enter : run cell
 Alt-Enter : run cell, 다음 셀 삽입
 Ctrl-Shift- 셀 분할
-Ctrl-s 노트북 파일 
+Ctrl-s 노트북 파일 열기
 
 # Command Mode 단축기
 
