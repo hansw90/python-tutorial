@@ -1,5 +1,4 @@
 ## Jupyter Notebook
-  
  
 # 단축키 (Shortcut) : Edit Mode 단축키
 
@@ -53,3 +52,5 @@ ii : interrupt kernel
 oo : restart kernel
 j/방향키 아래 : 다음 셀로 이동
 
+
+열시미하자..
