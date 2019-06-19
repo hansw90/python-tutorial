@@ -23,7 +23,6 @@ Alt-Enter : run cell, 다음 셀 삽입
 Ctrl-Shift- 셀 분할
 Ctrl-s 노트북 파일 열기
 
-
 # Command Mode 단축기
 
 Enter : Edit mode 진입
