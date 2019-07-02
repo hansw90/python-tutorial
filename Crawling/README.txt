@@ -73,4 +73,3 @@ ex) 네이버 웹툰.
 Ex)HTML코드, 이미지데이터, JavaScript코드, CSS코드, 비디오 데이터 등등..
 
 
-출처: https://rednooby.tistory.com/96?category=695414 [개발자의 취미생활]
