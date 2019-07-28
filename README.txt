@@ -8,7 +8,7 @@ Shift-Tab : 툴팁
 Ctrl-[ : 들여쓰기 
 Ctrl-] : 내어쓰기
 Ctrl-a : 전체 선택
-Ctrl-z : undo
+Ctrl-z : undo 
 Ctrl-Shift-z : redo
 Ctrl-Home : 셀 처음으로 이동
 Ctrl-End : 셀 끝으로 이동
