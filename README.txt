@@ -31,7 +31,7 @@ Shift-Enter : run cell, 다음 셀 선택
 Ctrl-Enter :  run cell
 Alt-Enter : run cell, 다음 셀 삽입
 y : Code 셀로 변환
-m : Markdown 셀로 변환
+m : Markdown 셀로 변환 
 r : Raw NB 셀로 변환
 a : 위에 셀 삽입
 b : 아래 셀 삽입
